@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #faf8f5;
+    font-family: "Montserrat", sans-serif;
+}
+:root{
+    --teal:#002323;
+}
+a, a:hover{
+    color: unset;
+    text-decoration: none;
+}
+nav>img{
+    width: 150px;
+    height: 54px;
+}
+nav{
+    font-weight: 600;
+    width: 100%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0%);
+    padding: 12px;
+    z-index: 999;
+    color: #333;
+    border-bottom: 1px solid #d9e1e6;
+    background-color: #fff;
+}
+nav>svg{
+    font-size: 30px;
+    display: none;
+}
+.subnv{
+    gap: 20px;
+}
+
+
+/*******************************************************************************************************************************/
+
+.carousel{
+    height: 100vh !important;
+}
+.carousel img, .carousel-inner, .carousel-item{
+    height: 100% !important;
+}
+.carousel img{
+    filter: brightness(60%);
+    object-fit: cover;
+}
+.carousel-indicators button{
+    display: none;
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 50% !important;
+}
+.carousel-control-next, .carousel-control-prev{
+    color: transparent !important;
+}
+/* *************************************************************************************************************************** */
+
+.loginpage, .registerpage, .forgetPass{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px,0fr));
+    justify-content: center;
+    align-items: center;
+}
+.forgetPass{
+    height: unset;
+    padding: 90px 0;
+}
+.registerpage, .userpanel, .hotelsPage{
+    padding-top: 100px;
+    height: unset !important;
+}
+form{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+    box-shadow: 0 0 10px gray;
+    height: fit-content;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+}
+form div i {
+    position: absolute;
+    background-color: white;
+    padding: 8px;
+    right: 10px;
+    bottom: 2px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+form div .e1{
+    right: 22px;
+}
+i[class*="slash"] {
+    transform: scale(0);
+}
+.loginpage input, .forgetPass input{
+    width: 500px !important;
+}
+.loginpage a{
+    text-decoration: underline;
+    color: blue;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* **************************************************************************************************************** */
+
+
+.hotelsPage{
+    padding: 120px 20px 20px 20px;
+    overflow: hidden;
+}
+.detailPage{
+    padding-top: 120px;
+    overflow: hidden;
+}
+.hotelsPage form{
+    display: flex !important;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+    flex-direction: row !important;
+}
+.hotelsPage form>div{
+    width: 400px;
+}
+.hotel{
+    width: 700px;
+}
+.hotelsPage>div:nth-child(2){
+    row-gap: 180px;
+}
+.hotel img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.hotelDetail{
+    background-color: white;
+    height: 350px;
+    width: 80% !important;
+    bottom: -35%;
+    left: 50%;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transform: translate(-50%,0%);
+    padding: 40px 40px 30px 40px;
+    border-radius: 10px;
+}
+.hotelDetail p{
+    font-size: 14px;
+    color: #6c757d;
+}
+.book, .user{
+    background-color: #978667;
+    color: white;
+    font-weight: 600;
+    padding: 10px 25px;
+    border-radius: 25px;
+    border: 0;
+}
+.book:hover, .user:hover{
+    color: white;
+}
+
+/* ********************************************************************************************************************************* */
+
+.content{
+    padding: 60px 50px;
+}
+.content small{
+    color: #978667;
+    font-size: 20px
+}
+.content h1{
+    font-size: 50px;
+}
+.content h4{
+    font-size: 30px;
+}
+.content h5{
+    font-size: 15px;
+}
+.content h6{
+    font-size: 20px;
+    text-align: justify;
+    color: #6c757d;
+    font-weight: 300;
+}
+.services{
+    padding-top: 30px;
+    row-gap: 20px;
+}
+.services div{
+    font-size: 25px;
+    color: #6c757d;
+    font-weight: 300;
+}
+.services svg{
+    font-size: 35px;
+    color: #978667;
+}
+.reviewBox{
+    width: fit-content;
+}
+.reviewBox img{
+    width: 500px;
+    height: 400px;
+}
+.reviewBox div{
+    top: 20%;
+    left: 5%;
+    padding: 50px;
+}
+.reviewBox p{
+    width: 90%;
+}
+.content form{
+    border: 0;
+    background-color: unset;
+    box-shadow: unset;
+}
+.content input, .content select{
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 0px !important;
+    outline: 0;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.content .form-select:focus{
+    border: 1px solid black !important;
+    box-shadow: none !important;
+}
+.bookNow{
+    height: 70vh;
+}
+.bookNow .gradi{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+.bookNow img{
+    width: 60%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -2;
+    object-fit: cover;
+}
+.bookNow .gradi{
+    background-image: linear-gradient( 80deg, #faf8f5 45%, transparent);
+}
+.bookNow::after, .bookNow::before{
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    content: "";
+    z-index: -1;
+}
+.bookNow::after{
+    left: 0;
+    top: 0;
+    background: linear-gradient(to bottom, #faf8f5, transparent);
+}
+.bookNow::before{
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to top, #faf8f5, transparent);
+}
+.bookNow h1{
+    font-family: "Caveat", cursive;
+    font-size: 4rem;
+    font-style: normal;
+    color: #555;
+}
+.bookBox{
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 8px grey;
+    background-color: white;
+    gap: 15px;
+}
+.bookBox img{
+    width: 300px;
+    object-fit: cover;
+    height: 350px;
+    border-radius: 10px;
+}
+/* .bookBox table {
+    width: 350px;
+} */
+.bookBox td{
+    padding: 5px;
+}
+.bookBox td:first-child, .userpanel>div:first-child td:first-child{
+    font-size: 20px;
+    font-weight: 800;
+}
+.reservDetail{
+    padding: 100px 20px;
+}
+/* ************************************************************************************************************* */
+
+.userpanel>div:first-child{
+    
+    width: 40%;
+}
+.userpanel>div:last-child{
+    width: 60%;
+}
+.userpanel table{
+    width: 100%;
+}
+.userpanel th, .userpanel td{
+    padding: 8px;
+}
+.editPop{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 50px;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    background-color: #6c757d49;
+    backdrop-filter: blur(10px);
+}
+.editBox{
+    background-color: white;
+    border-radius: 10px;
+    width: 550px;
+}
+.editBox svg{
+    font-size: 30px;
+    cursor: pointer;
+}
+.editBox form, .hotelsPage form{
+    box-shadow: none;
+    background-color: unset;
+}
+.caroList section{
+    width: 100%;
+    overflow: hidden;
+}
+.caroList section>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.caroList section>div>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loop 50s linear infinite;
+}
+@keyframes loop {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-100%);
+  }
+}
+/* ******************************************************************************************************************* */
+
+.home p, .videoCont small{
+    text-transform: uppercase;
+    color: #ebd7b2;
+    letter-spacing: 4px;
+    font-weight: 600;
+    display: block;
+    margin: 0 0 10px 0;
+}
+.home h2, .videoCont h1{
+    font-size: 3.1875rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.herocont{
+    background: url('./assets/images/pattern_1.png') top right no-repeat;
+}
+.herocont small, .localAmen small, .ourRooms small{
+    color: #978667;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+.herocont h3,  .localAmen h2, .ourRooms h2{
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.03em;
+    line-height: 1.3;
+    font-size: 2.375rem;
+    margin-bottom: 15px;
+}
+.herocont h6{
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.herocont p{
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.herocont h4{
+    font-family: "Caveat", cursive;
+    font-size: 2rem;
+    font-style: normal;
+    color: #555;
+}
+.herocont>div{
+    padding:80px;
+}
+.herocont>div:nth-child(2){
+    padding-right:100px;
+}
+.herocont img{
+    border-radius: 10px;
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+img[alt="h1"]{
+    width: 50%;
+    height: fit-content;
+    border: 5px solid white;
+    top: 50%;
+    left: -25%;
+    transform: translateX(40%) translateY(-50%);
+}
+.access{
+    padding: 80px 100px;
+    overflow: hidden;
+}
+
+.access>div:first-child{
+    border-top: 1px solid rgb(200, 200, 200);
+}
+.accessShow{
+    width: 300px;
+}
+.accessShow>svg{
+    font-size: 37px;
+}
+.accessCaro{
+    bottom: 0;
+    left: 0;
+    min-width: 100%;
+}
+.accessCaro>div{
+    min-width: 190vw;
+    font-size: 100px;
+    font-weight: bold;
+    opacity: 0.05;
+    line-height: 1.2;
+    animation: caro 30s infinite linear;
+}
+@keyframes caro{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-190vw);
+    }
+}
+footer{
+    background-color: #555;
+    color: #faf8f5;
+}
+
+/* ************************************************************************************************************************ */
+
+.sunsetDiv>video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+.videoCont{
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.168);
+    width: 600px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+    transition: all 1s;
+}
+.videoCont h1{
+    color: white;
+}
+.aboutCont img[alt="h1"]{
+    width: 50%;
+    height: 60% !important;
+    height: fit-content;
+    border: 5px solid white;
+    top: 50%;
+    left: 55%;
+    transform: translateY(-50%);
+}
+.localAmen, .ourRooms{
+    padding: 60px;
+    padding-top: 120px;
+    padding-bottom: 95px;
+    overflow: hidden;
+}
+.localAmen li{
+    list-style: none;
+    position: relative;
+}
+.localAmen svg {
+    color: #978667;
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "bootstrap-icons";
+    content: "\f19f";
+    font-size: 2rem;
+}
+.amenImg>img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.localAmen>div{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 20px;
+}
+.amenImg{
+    display: grid;
+    grid-template-areas: 'a b'
+                            'c b';
+    gap: 10px;
+}
+.amenImg>img:nth-child(1){
+    grid-area: a;
+}
+.amenImg>img:nth-child(2){
+    grid-area: b;
+}
+.amenImg>img:nth-child(3){
+    grid-area: c;
+}
+
+.ourRooms img{
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 1s;
+}
+.roomBox{
+    border-radius: 15px;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.roomBox:hover>img{
+    transform: scale(1.1);
+}
+.r1,.r2,.r3{
+    width: 49%;
+}
+.roomBox>div{
+    z-index: 2;
+    background:linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.489), rgba(0, 0, 0, 0.862));
+    bottom: -15%;
+    transition: all 1s;
+    left: 0;
+    height: 40%;
+    padding: 30px 50px;
+    color: #fff;
+}
+.roomBox:hover>div{
+    bottom: 0;
+}
+.roomBox a{
+    transition: all 0.4s;
+    opacity: 0;
+    position: relative;
+}
+.roomBox a::before{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #faf8f5;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: all 0.8s;
+}
+.roomBox:hover a::before{
+    width: 100%;
+}
+.roomBox:hover a{
+    opacity: 1;
+}
+/* *********************************************************************************************************************** */
+@media only screen and (max-width:650px){
+    nav>svg{
+        display: unset;
+    }
+    .subnv{
+        position: absolute !important;
+        width: 90%;
+        left: 250%;
+        transform: translateX(-50%);
+        top: 80px;
+        z-index: -1;
+        transition: all 1s;
+        padding: 20px;
+        background-color: #fff;
+        flex-direction: column !important;
+        border: 1px solid #d9e1e6;
+    }
+    .loginpage, .registerpage, .forgetPass{
+        /* height: unset; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loginpage a{
+        text-align: center;
+    }
+    .loginpage form, .registerpage form, .forgetPass form{
+        width: 95% !important;
+        /* margin: 150px 20px; */
+    }
+    .loginpage input, .forgetPass input{
+        width: 100% !important;
+    }
+    .subActive{
+        left: 50%;
+    }
+    .localAmen{
+        padding: 100px 30px 0 30px;
+    }
+    .amenImg{
+        grid-template-areas: 'a'
+                                'b'
+                                'c';
+    }
+}
+@media only screen and (max-width:810px){
+    .herocont>div, .herocont>div:nth-child(2){
+        padding: 25px;
+    } 
+    .herocont img{
+        height: 500px;
+    }  
+    img[alt="h1"]{
+        width: 70%;
+        height: 300px;
+        bottom: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+    } 
+    .access{
+        padding: 80px 20px;
+    }
+    .access>div:first-child{
+        justify-content: center !important;
+    }
+    .accessCaro>div{
+        font-size: 40px;
+    }
+    .videoCont{
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.168);
+        width: 80%;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+}
+@media only screen and (max-width:900px){
+    .localAmen>div{
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .ourRooms>div:nth-child(2){
+        flex-direction: column !important; 
+        justify-content: center;
+        gap: 20px;
+    }
+    .r1{
+        width: 100%;
+    }
+    .r2, .r3{
+        width: 49%;
+    }
+    .ourRooms>div>div:nth-child(2){
+        width: 100% !important;
+    }
+    .userpanel{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .userpanel>div{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width:770px){
+    .aboutCont img[alt="h1"]{
+        width: 50%;
+        height: 60% !important;
+        height: fit-content;
+        border: 5px solid white;
+        bottom: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .bookNow{
+        height: unset !important;
+    }
+}
+@media only screen and (max-width:600px){
+    .accessCaro>div{
+        min-width: 200vw !important;
+    }
+    @keyframes caro{
+        from{
+            transform: translateX(0);
+        }
+        to{
+            transform: translateX(-200vw);
+        }
+    }
+    .videoCont{
+        padding: 20px;
+    }
+}
+@media only screen and (max-width:480px){
+    .home h2, .videoCont h1{
+        font-size: 2.1875rem;
+    }
+    form div .e1{
+        right: 10px;
+    }
+    .aboutCont img[alt="h1"]{
+        width: 70%;
+        height: 50%
+    }
+    .ourRooms>div>div:nth-child(2)>div{
+        flex-direction: column !important;
+        gap: 20px;
+    }
+    .roomBox{
+        width: 100%;
+    }
+    .roomBox>div{
+        padding: 30px;
+    }
+    .hotelDetail{
+        height: unset !important;
+        padding: 30px;
+    }
+    .hotel>div:first-child{
+        padding: 10px !important;
+    }
+    .content{
+        padding: 60px 30px;
+    }
+    .detailPage .content:has(.caroList:nth-child(2)){
+        padding-right: 10px !important;
+    }
+    .bookBox td:first-child{
+        font-weight: 800;
+        font-size: 15px;
+    }
+    .userpanel>div:first-child td:first-child{
+        font-weight: 800;
+        font-size: 13px;
+    }
+    .bookedTable th{
+        font-weight: 800;
+        font-size: 12px;
+    }
+    .bookedTable td, .userpanel>div:first-child td{
+        font-size: 12px;
+    }
+    .userpanel>div:first-child td{
+        padding: 8px 0px;
+    }
+    .bookBox td{
+        font-size: 13px;
+    }
+    .bookBox{
+        padding: 15px;
+    }
+    .bookedTable .user{
+        padding: 10px 15px;
+    }
+    .bookedTable th:nth-child(3), .bookedTable td:nth-child(3){
+        display: none;
+    }
+    .user span{
+        display: none;
+    }
+    .user .d-none{
+        font-size: 20px;
+        display: inline-block !important;
+    }
+    .registerpage input, .editBox input{
+        width: 100% !important;
+    }
+    .registerpage form>div{
+        flex-direction: column !important;
+        margin: 0 !important;
+    }
+    .editBox form>div{
+        flex-direction: column;
+    }
+    .registerpage form>div>div, .editBox form>div>div{
+        padding: 0 !important;
+        margin-bottom: 18px;
+    }
+    .editPop{
+        padding: 30px;
+       padding-top: 500px;
+    }
+    .editBox{
+        width: 100%;
+    }
+}
+@media only screen and (max-width:690px){
+    .vh-100:has(.bookBox:first-child){
+        height: unset !important;
+        padding: 100px 20px;
+    }
+    .bookBox img{
+        width: 100% !important;
+    }
+}
+@media only screen and (max-width:550px){
+    .localAmen, .ourRooms{
+        padding: 30px;
+        padding-top: 120px;
+        padding-bottom: 95px;
+        overflow: hidden;
+    }
+}
+
